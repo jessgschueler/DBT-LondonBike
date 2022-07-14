@@ -1,0 +1,21 @@
+
+version: 2
+
+models:
+  - name: cycle_hire
+    description: Bicycle rentals in London
+    columns:
+      - name: id
+        description: rental_id
+        tests:
+          - unique
+          - not_null
+
+  - name: cycle_stations
+    description: Rental stations
+    columns:
+      - name: id
+        description: the station id
+        tests:
+          - unique
+          - not_null
